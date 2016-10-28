@@ -21,7 +21,7 @@ angular.module 'angular-jquery-querybuilder', []
                    afterDeleteRule.queryBuilder         afterDeleteGroup.queryBuilder', ->  # these are all events which could change rules value
         newRules = $element[0].queryBuilder.getRules()
         if (not angular.equals newRules, $scope.options.rules) and (newRules?.condition or newRules?.rules)
-          $scope.$emit("QueryBuilderValueChanged")
+          $scope.$emit("QueryBuilderValueChanged", newRules)
 
     getRulesOrDefault = ->
       if not $scope.options.rules?.condition and not $scope.options.rules?.rules # to save querybuilder from incorrect external values
