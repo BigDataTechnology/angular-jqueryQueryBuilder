@@ -27,6 +27,7 @@
     "gulp-copy": "0.0.2",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
     "gutil": "^1.6.4",
     "pump": "^1.0.1"
   }

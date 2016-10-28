@@ -19,7 +19,7 @@ angular.module('angular-jquery-querybuilder', []).directive('queryBuilder', [
             var newRules;
             newRules = $element[0].queryBuilder.getRules();
             if ((!angular.equals(newRules, $scope.options.rules)) && ((newRules != null ? newRules.condition : void 0) || (newRules != null ? newRules.rules : void 0))) {
-              return $scope.$emit("QueryBuilderValueChanged");
+              return $scope.$emit("QueryBuilderValueChanged", newRules);
             }
           });
         };
