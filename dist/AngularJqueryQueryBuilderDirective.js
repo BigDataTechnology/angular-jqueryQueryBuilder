@@ -1,4 +1,4 @@
-angular.module('angular-jquery-querybuilder', []).directive('queryBuilder', [
+angular.module('bdt-angular-jq-querybuilder', []).directive('queryBuilder', [
   function() {
     return {
       restrict: 'AE',

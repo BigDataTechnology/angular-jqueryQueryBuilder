@@ -1,4 +1,4 @@
-angular.module 'angular-jquery-querybuilder', []
+angular.module 'bdt-angular-jq-querybuilder', []
 .directive 'queryBuilder', [ () ->
   restrict: 'AE'
   scope:
